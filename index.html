@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Dal</title>
+<meta name="description" content="Projects by E-Dal.">
+<link rel="canonical" href="https://e-dal.github.io/">
+<style>
+  :root {
+    --bg: #fbfbfa;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --rule: #e2e2df;
+    --link: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414;
+      --fg: #ececec;
+      --muted: #8f8f8f;
+      --rule: #2c2c2c;
+      --link: #ececec;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 12vh 24px 6rem;
+  }
+  main { width: 100%; max-width: 34rem; }
+  h1 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .tagline { color: var(--muted); margin-top: 0.15rem; }
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 3rem 0 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .project a {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    font-weight: 600;
+  }
+  .project a:hover { border-bottom-color: currentColor; }
+  .project p { color: var(--muted); margin-top: 0.2rem; }
+  .repo {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .repo:hover { color: var(--fg); border-bottom-color: var(--rule); }
+</style>
+</head>
+<body>
+<main>
+  <h1>E-Dal</h1>
+  <p class="tagline">Things I've built.</p>
+
+  <h2>Projects</h2>
+
+  <div class="project">
+    <a href="/omori-album/">OMORI Photo Album</a>
+    <p>A browser recreation of BASIL'S PHOTO ALBUM from OMORI — the menus,
+       the typewriter text, the page-turn sounds, all of it.</p>
+    <a class="repo" href="https://github.com/E-Dal/omori-album">Source on GitHub →</a>
+  </div>
+</main>
+</body>
+</html>
