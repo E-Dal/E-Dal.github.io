@@ -6,3 +6,4 @@ Allow: /
 # a robots.txt inside a project repo would never be fetched.
 Sitemap: https://e-dal.github.io/sitemap.xml
 Sitemap: https://e-dal.github.io/omori-album/sitemap.xml
+Sitemap: https://e-dal.github.io/omori-map-guide/sitemap.xml
